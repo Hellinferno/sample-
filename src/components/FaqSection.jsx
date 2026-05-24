@@ -6,14 +6,12 @@ export default function FaqSection() {
   const [openIdx, setOpenIdx] = useState(null);
   const [faqSearch, setFaqSearch] = useState('');
 
-  // Extract FAQs from data
   const faqs = coursesData.faqs || [];
 
   const handleToggle = (idx) => {
     setOpenIdx(openIdx === idx ? null : idx);
   };
 
-  // Filter FAQs based on keyword search
   const filteredFaqs = useMemo(() => {
     if (!faqSearch.trim()) return faqs;
     return faqs.filter(
@@ -25,27 +23,28 @@ export default function FaqSection() {
 
   return (
     <section id="faqs" style={{ 
-      padding: '80px 0', 
+      padding: '100px 0', 
       borderTop: '1px solid var(--border-subtle)',
+      background: 'var(--bg-deep)',
       position: 'relative'
     }}>
       <div className="container">
         
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-          <div style={{ display: 'inline-flex', padding: '10px', background: 'rgba(139, 92, 246, 0.1)', border: '1px solid rgba(139, 92, 246, 0.2)', borderRadius: '12px', marginBottom: '16px', color: 'var(--primary-neon)' }}>
+        <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+          <div style={{ display: 'inline-flex', padding: '12px', background: 'rgba(99, 102, 241, 0.06)', border: '1px solid rgba(99, 102, 241, 0.1)', borderRadius: '14px', marginBottom: '20px', color: 'var(--primary-neon)' }}>
             <HelpCircle size={28} />
           </div>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>
             Frequently Asked Questions
           </h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-            Got questions? We've compiled essential information on courses registration, study mode, quizzes, and certificates.
+            Got questions? Search our index of questions regarding enrollments, grading quizzes, and certificate ledger transactions.
           </p>
         </div>
 
         {/* Search bar inside FAQs */}
-        <div style={{ maxWidth: '600px', margin: '0 auto 40px auto', position: 'relative' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto 48px auto', position: 'relative' }}>
           <span style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', display: 'flex', color: 'var(--text-muted)' }}>
             <Search size={18} />
           </span>
@@ -56,7 +55,7 @@ export default function FaqSection() {
             onChange={(e) => setFaqSearch(e.target.value)}
             style={{
               width: '100%',
-              background: 'rgba(17, 24, 39, 0.4)',
+              background: 'var(--bg-white)',
               border: '1px solid var(--border-subtle)',
               borderRadius: '12px',
               padding: '14px 16px 14px 44px',
@@ -64,7 +63,8 @@ export default function FaqSection() {
               fontFamily: 'var(--font-body)',
               fontSize: '0.95rem',
               outline: 'none',
-              transition: 'var(--transition-smooth)'
+              transition: 'var(--transition-smooth)',
+              boxShadow: 'var(--shadow-sm)'
             }}
             className="faq-search-box"
           />
@@ -80,8 +80,9 @@ export default function FaqSection() {
                   key={idx}
                   className="glass-panel"
                   style={{ 
-                    border: '1px solid ' + (isOpen ? 'rgba(139, 92, 246, 0.25)' : 'var(--border-subtle)'),
-                    background: isOpen ? 'rgba(17, 24, 39, 0.6)' : 'rgba(17, 24, 39, 0.3)',
+                    border: '1px solid ' + (isOpen ? 'rgba(99, 102, 241, 0.15)' : 'var(--border-subtle)'),
+                    background: 'var(--bg-white)',
+                    boxShadow: isOpen ? 'var(--shadow-md)' : 'var(--shadow-sm)',
                     overflow: 'hidden'
                   }}
                 >
@@ -99,9 +100,9 @@ export default function FaqSection() {
                       padding: '20px 24px',
                       cursor: 'pointer',
                       textAlign: 'left',
-                      color: isOpen ? '#fff' : 'var(--text-primary)',
+                      color: isOpen ? 'var(--primary-neon)' : 'var(--text-primary)',
                       fontFamily: 'var(--font-heading)',
-                      fontWeight: '600',
+                      fontWeight: '700',
                       fontSize: '1.05rem',
                       transition: 'var(--transition-smooth)'
                     }}
@@ -119,7 +120,7 @@ export default function FaqSection() {
                       color: 'var(--text-secondary)',
                       fontSize: '0.95rem',
                       lineHeight: '1.6',
-                      borderTop: '1px solid rgba(255, 255, 255, 0.03)',
+                      borderTop: '1px solid #f1f5f9',
                       paddingTop: '16px',
                       animation: 'slideDown 0.25s ease-out'
                     }}>
@@ -131,7 +132,7 @@ export default function FaqSection() {
               );
             })
           ) : (
-            <div style={{ textAlign: 'center', padding: '40px 24px', background: 'var(--bg-card)', border: '1px solid var(--border-subtle)', borderRadius: '12px' }}>
+            <div style={{ textAlign: 'center', padding: '40px 24px', background: 'var(--bg-white)', border: '1px solid var(--border-subtle)', borderRadius: '12px', boxShadow: 'var(--shadow-sm)' }}>
               <p style={{ color: 'var(--text-secondary)' }}>No matching questions found. Try search keywords like "free", "certificate", or "quiz".</p>
             </div>
           )}
@@ -142,7 +143,7 @@ export default function FaqSection() {
       <style dangerouslySetInnerHTML={{__html: `
         .faq-search-box:focus {
           border-color: var(--primary-neon) !important;
-          box-shadow: 0 0 15px rgba(139, 92, 246, 0.15) !important;
+          box-shadow: 0 0 15px rgba(99, 102, 241, 0.1) !important;
         }
         @keyframes slideDown {
           from {

@@ -16,7 +16,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
     if (!email || !password || (mode === 'register' && !name)) return;
 
     setLoading(true);
-    // Simulate API query latency
     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
@@ -28,7 +27,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
           isLoggedIn: true
         });
         onClose();
-        // Reset state
         setEmail('');
         setPassword('');
         setName('');
@@ -40,8 +38,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
     <div style={{
       position: 'fixed',
       top: 0, left: 0, right: 0, bottom: 0,
-      background: 'rgba(5, 7, 11, 0.85)',
-      backdropFilter: 'blur(10px)',
+      background: 'rgba(15, 23, 42, 0.4)',
+      backdropFilter: 'blur(8px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -55,11 +53,11 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
         style={{
           width: '100%',
           maxWidth: '440px',
-          padding: '36px',
-          background: 'var(--bg-card)',
-          border: '1px solid rgba(255, 255, 255, 0.08)',
+          padding: '40px',
+          background: 'var(--bg-white)',
+          border: '1px solid var(--border-subtle)',
           position: 'relative',
-          boxShadow: '0 20px 50px rgba(0, 0, 0, 0.5)',
+          boxShadow: 'var(--shadow-2xl)',
           animation: 'modalScale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
         }}
       >
@@ -70,7 +68,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
             position: 'absolute',
             top: '20px',
             right: '20px',
-            background: 'rgba(255,255,255,0.03)',
+            background: '#f8fafc',
             border: '1px solid var(--border-subtle)',
             borderRadius: '50%',
             width: '32px',
@@ -82,8 +80,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
             cursor: 'pointer',
             transition: 'var(--transition-smooth)'
           }}
-          onMouseEnter={(e) => e.currentTarget.style.color = '#fff'}
-          onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
+          onMouseEnter={(e) => e.currentTarget.style.background = '#e2e8f0'}
+          onMouseLeave={(e) => e.currentTarget.style.background = '#f8fafc'}
         >
           <X size={16} />
         </button>
@@ -94,7 +92,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
             <div style={{ display: 'inline-flex', color: '#10B981', marginBottom: '20px', animation: 'successPop 0.4s ease-out' }}>
               <CheckCircle size={56} />
             </div>
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '8px', color: 'var(--text-primary)' }}>
               {mode === 'login' ? 'Welcome Back!' : 'Account Created!'}
             </h3>
             <p style={{ color: 'var(--text-secondary)' }}>
@@ -104,7 +102,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
         ) : (
           /* Form Screen */
           <div>
-            <h3 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '8px', fontFamily: 'var(--font-heading)' }}>
+            <h3 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '8px', fontFamily: 'var(--font-heading)', color: 'var(--text-primary)' }}>
               {mode === 'login' ? 'Sign In' : 'Create Account'}
             </h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '32px' }}>
@@ -116,10 +114,10 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               
-              {/* Full Name (register only) */}
+              {/* Full Name */}
               {mode === 'register' && (
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '8px' }}>
                     Full Name
                   </label>
                   <div style={{ position: 'relative' }}>
@@ -141,7 +139,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
 
               {/* Email */}
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '8px' }}>
                   Email Address
                 </label>
                 <div style={{ position: 'relative' }}>
@@ -162,7 +160,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
 
               {/* Password */}
               <div>
-                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '8px' }}>
                   Password
                 </label>
                 <div style={{ position: 'relative' }}>
@@ -215,7 +213,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
                   New to Axlo?{' '}
                   <button 
                     onClick={() => setMode('register')} 
-                    style={{ background: 'none', border: 'none', color: 'var(--primary-neon-hover)', fontWeight: '700', cursor: 'pointer' }}
+                    style={{ background: 'none', border: 'none', color: 'var(--primary-neon)', fontWeight: '700', cursor: 'pointer' }}
                   >
                     Create an account
                   </button>
@@ -225,7 +223,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onAu
                   Already have an account?{' '}
                   <button 
                     onClick={() => setMode('login')} 
-                    style={{ background: 'none', border: 'none', color: 'var(--primary-neon-hover)', fontWeight: '700', cursor: 'pointer' }}
+                    style={{ background: 'none', border: 'none', color: 'var(--primary-neon)', fontWeight: '700', cursor: 'pointer' }}
                   >
                     Sign in
                   </button>

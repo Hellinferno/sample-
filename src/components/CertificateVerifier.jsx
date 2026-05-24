@@ -7,7 +7,6 @@ export default function CertificateVerifier() {
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(false);
 
-  // Mock certificate database
   const certDatabase = {
     'AXLO-EXCEL-2026': {
       studentName: 'Alex Mercer',
@@ -56,41 +55,46 @@ export default function CertificateVerifier() {
 
   return (
     <section id="verifier" style={{ 
-      padding: '80px 0', 
+      padding: '100px 0', 
       borderTop: '1px solid var(--border-subtle)',
+      background: 'var(--bg-white)',
       position: 'relative'
     }}>
       <div className="container">
         
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-          <div style={{ display: 'inline-flex', padding: '10px', background: 'rgba(6, 182, 212, 0.1)', border: '1px solid rgba(6, 182, 212, 0.2)', borderRadius: '12px', marginBottom: '16px', color: 'var(--secondary-neon)' }}>
+        <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+          <div style={{ display: 'inline-flex', padding: '12px', background: 'rgba(99, 102, 241, 0.06)', border: '1px solid rgba(99, 102, 241, 0.1)', borderRadius: '14px', marginBottom: '20px', color: 'var(--primary-neon)' }}>
             <ShieldCheck size={28} />
           </div>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>
             Secured Blockchain Verification
           </h2>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-            Every AXLO certificate is anchored to a public cryptographic ledger. Validate legitimacy and student transcripts instantly.
+            Every certificate issued is cryptographically anchored to a public ledger. Validate credentials legitimacy instantly.
           </p>
         </div>
 
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: result ? '1.1fr 1fr' : '1fr', 
-          gap: '40px',
-          alignItems: 'start',
-          transition: 'var(--transition-smooth)'
+          gridTemplateColumns: result ? '1.15fr 1fr' : '1fr', 
+          gap: '48px',
+          alignItems: 'start'
         }} className="verifier-grid">
           
           {/* Left panel: Verification form */}
-          <div className="glass-panel" style={{ padding: '40px', border: '1px solid var(--border-subtle)', background: 'rgba(17, 24, 39, 0.4)' }}>
-            <h3 style={{ fontSize: '1.4rem', marginBottom: '12px' }}>Verify Student Credentials</h3>
+          <div className="glass-panel" style={{ 
+            padding: '40px', 
+            border: '1px solid var(--border-subtle)', 
+            background: 'var(--bg-deep)',
+            boxShadow: 'var(--shadow-md)'
+          }}>
+            <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '12px' }}>Verify Credentials</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '24px' }}>
-              Enter the unique certificate identification hash displayed on the digital document to load credentials details.
+              Enter the unique certificate identification hash displayed on the diploma document to load ledger registration details.
             </p>
 
-            <form onSubmit={handleVerify} style={{ display: 'flex', gap: '12px', marginBottom: '24px' }}>
+            <form onSubmit={handleVerify} style={{ display: 'flex', gap: '12px', marginBottom: '28px' }}>
               <div style={{ position: 'relative', flexGrow: 1 }}>
                 <span style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', display: 'flex', color: 'var(--text-muted)' }}>
                   <Search size={18} />
@@ -102,7 +106,7 @@ export default function CertificateVerifier() {
                   onChange={(e) => setCertId(e.target.value)}
                   style={{
                     width: '100%',
-                    background: 'rgba(8, 11, 17, 0.6)',
+                    background: 'var(--bg-white)',
                     border: '1px solid var(--border-subtle)',
                     borderRadius: '12px',
                     padding: '14px 16px 14px 44px',
@@ -122,8 +126,8 @@ export default function CertificateVerifier() {
 
             {/* Quick try codes */}
             <div style={{ marginBottom: '16px' }}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', display: 'block', marginBottom: '8px' }}>
-                Test credentials using these verified codes:
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600', display: 'block', marginBottom: '10px' }}>
+                Test credentials database using these verified IDs:
               </span>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 {Object.keys(certDatabase).map((code) => (
@@ -131,22 +135,23 @@ export default function CertificateVerifier() {
                     key={code}
                     onClick={() => { setCertId(code); setSearched(false); setResult(null); }}
                     style={{
-                      background: 'rgba(255, 255, 255, 0.03)',
+                      background: 'var(--bg-white)',
                       border: '1px solid var(--border-subtle)',
-                      color: 'var(--secondary-neon)',
+                      color: 'var(--primary-neon)',
                       fontSize: '0.8rem',
                       fontWeight: '700',
-                      padding: '6px 12px',
-                      borderRadius: '6px',
+                      padding: '8px 14px',
+                      borderRadius: '8px',
                       cursor: 'pointer',
+                      boxShadow: 'var(--shadow-sm)',
                       transition: 'var(--transition-smooth)'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = 'rgba(6, 182, 212, 0.1)';
-                      e.currentTarget.style.borderColor = 'rgba(6, 182, 212, 0.3)';
+                      e.currentTarget.style.background = 'rgba(99, 102, 241, 0.05)';
+                      e.currentTarget.style.borderColor = 'rgba(99, 102, 241, 0.2)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                      e.currentTarget.style.background = 'var(--bg-white)';
                       e.currentTarget.style.borderColor = 'var(--border-subtle)';
                     }}
                   >
@@ -159,15 +164,15 @@ export default function CertificateVerifier() {
             {/* Feedback message */}
             {searched && (
               <div style={{ 
-                marginTop: '24px', 
-                padding: '16px', 
+                marginTop: '28px', 
+                padding: '16px 20px', 
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '12px',
-                background: result ? 'rgba(16, 185, 129, 0.06)' : 'rgba(244, 63, 94, 0.06)',
-                border: '1px solid ' + (result ? 'rgba(16, 185, 129, 0.2)' : 'rgba(244, 63, 94, 0.2)'),
-                color: result ? '#10B981' : 'var(--accent-rose)',
+                background: result ? 'rgba(16, 185, 129, 0.08)' : 'rgba(244, 63, 94, 0.08)',
+                border: '1px solid ' + (result ? '#a7f3d0' : '#fecdd3'),
+                color: result ? '#047857' : '#be123c',
                 fontSize: '0.95rem'
               }}>
                 {result ? (
@@ -185,97 +190,98 @@ export default function CertificateVerifier() {
             )}
           </div>
 
-          {/* Right panel: Digital Certificate mockup rendering */}
+          {/* Right panel: Premium Ivory & Gold Certificate Mockup */}
           {result && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               
-              {/* Certificate Canvas Mock */}
               <div style={{
-                background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
-                border: '8px double rgba(197, 160, 89, 0.4)',
-                borderRadius: '8px',
-                padding: '32px',
+                background: '#FAF9F6', /* Classic Ivory */
+                backgroundImage: 'radial-gradient(#f3e8d2 1px, transparent 1px)',
+                backgroundSize: '24px 24px',
+                border: '10px double #c5a059',
+                borderRadius: '10px',
+                padding: '40px',
                 position: 'relative',
-                boxShadow: '0 15px 40px rgba(0,0,0,0.5)',
-                color: '#fff',
-                fontFamily: 'serif'
+                boxShadow: '0 20px 40px rgba(15,23,42,0.08)',
+                color: '#1e293b',
+                fontFamily: 'Georgia, serif'
               }} className="certificate-mock">
                 
                 {/* Gold corner ornaments */}
-                <div style={{ position: 'absolute', top: '10px', left: '10px', fontSize: '1rem', color: '#c5a059', borderTop: '2px solid #c5a059', borderLeft: '2px solid #c5a059', width: '20px', height: '20px' }} />
-                <div style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '1rem', color: '#c5a059', borderTop: '2px solid #c5a059', borderRight: '2px solid #c5a059', width: '20px', height: '20px' }} />
-                <div style={{ position: 'absolute', bottom: '10px', left: '10px', fontSize: '1rem', color: '#c5a059', borderBottom: '2px solid #c5a059', borderLeft: '2px solid #c5a059', width: '20px', height: '20px' }} />
-                <div style={{ position: 'absolute', bottom: '10px', right: '10px', fontSize: '1rem', color: '#c5a059', borderBottom: '2px solid #c5a059', borderRight: '2px solid #c5a059', width: '20px', height: '20px' }} />
+                <div style={{ position: 'absolute', top: '10px', left: '10px', borderTop: '2px solid #c5a059', borderLeft: '2px solid #c5a059', width: '24px', height: '24px' }} />
+                <div style={{ position: 'absolute', top: '10px', right: '10px', borderTop: '2px solid #c5a059', borderRight: '2px solid #c5a059', width: '24px', height: '24px' }} />
+                <div style={{ position: 'absolute', bottom: '10px', left: '10px', borderBottom: '2px solid #c5a059', borderLeft: '2px solid #c5a059', width: '24px', height: '24px' }} />
+                <div style={{ position: 'absolute', bottom: '10px', right: '10px', borderBottom: '2px solid #c5a059', borderRight: '2px solid #c5a059', width: '24px', height: '24px' }} />
 
-                {/* Insignia / Seal */}
-                <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                  <Award size={36} color="#c5a059" style={{ margin: '0 auto' }} />
-                  <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-heading)', color: '#c5a059', letterSpacing: '0.2em', fontWeight: 'bold', marginTop: '6px' }}>
+                {/* Crest */}
+                <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+                  <Award size={40} color="#b28d46" style={{ margin: '0 auto' }} />
+                  <div style={{ fontSize: '0.8rem', fontFamily: 'var(--font-heading)', color: '#b28d46', letterSpacing: '0.25em', fontWeight: 'bold', marginTop: '8px' }}>
                     AXLO ACADEMY
                   </div>
                 </div>
 
-                <div style={{ textAlign: 'center', fontFamily: 'var(--font-heading)' }}>
-                  <h4 style={{ color: '#fff', fontSize: '1.2rem', fontFamily: 'serif', fontStyle: 'italic', fontWeight: 'normal', marginBottom: '8px' }}>
+                <div style={{ textAlign: 'center' }}>
+                  <h4 style={{ fontSize: '1.25rem', fontStyle: 'italic', fontWeight: 'normal', color: '#64748b', marginBottom: '10px' }}>
                     This is to certify that
                   </h4>
-                  <h3 style={{ color: '#c5a059', fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '12px' }}>
+                  <h3 style={{ color: '#b28d46', fontSize: '2.1rem', fontWeight: 'bold', marginBottom: '12px', fontFamily: 'Georgia, serif' }}>
                     {result.studentName}
                   </h3>
-                  <p style={{ fontSize: '0.85rem', color: '#94a3b8', fontStyle: 'italic', fontFamily: 'serif', marginBottom: '12px' }}>
-                    has successfully completed the curriculum and exam for the specialization course
+                  <p style={{ fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic', marginBottom: '14px' }}>
+                    has successfully completed the curriculum and assessment for the specialization course
                   </p>
-                  <h4 style={{ color: '#fff', fontSize: '1.1rem', fontWeight: '700', marginBottom: '16px', lineHeight: '1.4' }}>
+                  <h4 style={{ color: '#0f172a', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '20px', lineHeight: '1.4' }}>
                     {result.courseName}
                   </h4>
-                  <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '24px' }}>
-                    Completed with grade: <strong style={{ color: '#fff' }}>{result.grade}</strong> on {result.issueDate}
+                  <p style={{ fontSize: '0.85rem', color: '#64748b', marginBottom: '32px' }}>
+                    Graded at: <strong style={{ color: '#0f172a' }}>{result.grade}</strong> on {result.issueDate}
                   </p>
                 </div>
 
-                {/* Bottom line: Signature & verification info */}
+                {/* Bottom signatures */}
                 <div style={{ 
                   display: 'flex', 
                   justifyContent: 'space-between', 
                   alignItems: 'flex-end',
-                  borderTop: '1px solid rgba(255,255,255,0.06)',
-                  paddingTop: '16px',
+                  borderTop: '1px solid rgba(178, 141, 70, 0.2)',
+                  paddingTop: '20px',
                   fontFamily: 'var(--font-body)'
                 }}>
                   
-                  {/* Left: Signatures */}
-                  <div style={{ textAlign: 'left' }}>
-                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', fontStyle: 'italic', fontFamily: 'cursive', marginBottom: '2px', color: '#c5a059' }}>
+                  <div>
+                    <div style={{ fontSize: '0.85rem', color: '#b28d46', fontStyle: 'italic', fontFamily: 'cursive', marginBottom: '2px' }}>
                       M. G. Sterling
                     </div>
-                    <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2px', fontSize: '0.6rem', color: '#64748b', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '4px', fontSize: '0.65rem', color: '#64748b', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       Academic Registrar
                     </div>
                   </div>
 
-                  {/* Center: Seal mock */}
+                  {/* Stamp */}
                   <div style={{
-                    width: '44px',
-                    height: '44px',
+                    width: '52px',
+                    height: '52px',
                     borderRadius: '50%',
-                    border: '2px dashed #c5a059',
+                    border: '2px dashed #b28d46',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#c5a059',
-                    fontSize: '0.5rem',
+                    color: '#b28d46',
+                    fontSize: '0.55rem',
                     fontWeight: 'bold',
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    transform: 'rotate(-10deg)',
+                    background: 'rgba(178, 141, 70, 0.05)'
                   }}>
                     AXLO SECURE
                   </div>
 
-                  {/* Right: ID code */}
                   <div style={{ textAlign: 'right' }}>
-                    <div style={{ fontSize: '0.6rem', color: '#64748b', fontWeight: 'bold' }}>
-                      BLOCKCHAIN TXN HASH:
+                    <div style={{ fontSize: '0.6rem', color: '#94a3b8', fontWeight: 'bold' }}>
+                      LEDGER TX HASH:
                     </div>
-                    <div style={{ fontSize: '0.65rem', color: '#c5a059', fontFamily: 'monospace' }}>
+                    <div style={{ fontSize: '0.7rem', color: '#b28d46', fontFamily: 'monospace', fontWeight: 'bold' }}>
                       {result.blockchainTx}
                     </div>
                   </div>
@@ -284,24 +290,24 @@ export default function CertificateVerifier() {
 
               </div>
 
-              {/* Certificate Meta Actions */}
-              <div className="glass-panel" style={{ padding: '20px', background: 'rgba(17, 24, 39, 0.3)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+              {/* Meta details */}
+              <div className="glass-panel" style={{ padding: '24px', background: 'var(--bg-white)', border: '1px solid var(--border-subtle)', boxShadow: 'var(--shadow-md)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
                   <div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>BLOCKCHAIN CREDENTIAL ID</div>
-                    <div style={{ fontSize: '0.95rem', fontWeight: '700', color: 'var(--secondary-neon)' }}>{result.id}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600' }}>BLOCKCHAIN CREDENTIAL ID</div>
+                    <div style={{ fontSize: '1rem', fontWeight: '800', color: 'var(--primary-neon)' }}>{result.id}</div>
                   </div>
                   <div style={{ display: 'flex', gap: '8px' }}>
                     <button 
                       onClick={() => handleCopyHash(result.blockchainTx)}
                       style={{
-                        background: 'rgba(255,255,255,0.03)',
+                        background: 'rgba(15, 23, 42, 0.02)',
                         border: '1px solid var(--border-subtle)',
                         color: 'var(--text-primary)',
-                        padding: '8px 12px',
+                        padding: '10px 16px',
                         borderRadius: '8px',
                         fontSize: '0.8rem',
-                        fontWeight: '600',
+                        fontWeight: '700',
                         cursor: 'pointer',
                         display: 'inline-flex',
                         alignItems: 'center',
@@ -309,23 +315,12 @@ export default function CertificateVerifier() {
                       }}
                     >
                       <Copy size={14} />
-                      {copied ? 'Copied!' : 'Copy Tx Hash'}
+                      {copied ? 'Copied!' : 'Copy Hash'}
                     </button>
                     <button 
-                      onClick={() => alert('Certificate PDF printing simulation initiated.')}
-                      style={{
-                        background: 'linear-gradient(135deg, var(--primary-neon) 0%, #7c3aed 100%)',
-                        border: 'none',
-                        color: '#fff',
-                        padding: '8px 12px',
-                        borderRadius: '8px',
-                        fontSize: '0.8rem',
-                        fontWeight: '600',
-                        cursor: 'pointer',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '6px'
-                      }}
+                      onClick={() => alert('Certificate printing successfully simulated.')}
+                      className="btn-primary"
+                      style={{ padding: '10px 16px', borderRadius: '8px', fontSize: '0.8rem' }}
                     >
                       <Download size={14} />
                       Download PDF
@@ -343,8 +338,8 @@ export default function CertificateVerifier() {
 
       <style dangerouslySetInnerHTML={{__html: `
         .verifier-input:focus {
-          border-color: var(--secondary-neon) !important;
-          box-shadow: 0 0 15px rgba(6, 182, 212, 0.15) !important;
+          border-color: var(--primary-neon) !important;
+          box-shadow: 0 0 15px rgba(99, 102, 241, 0.1) !important;
         }
         @media (max-width: 991px) {
           .verifier-grid { grid-template-columns: 1fr !important; }

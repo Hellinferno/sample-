@@ -1,0 +1,493 @@
+{
+  "sections": [
+    {
+      "section_id": "short_trending",
+      "section_name": "Most Sought AfterCourses",
+      "courses": [
+        {
+          "title": "Executive Diploma in Business Communication",
+          "link": "short-courses/executive-diploma-in-business-communication",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Diploma in Environment Health and Safety Management",
+          "link": "short-courses/diploma-in-environment-health-and-safety-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Diploma in Supply Chain Management",
+          "link": "short-courses/diploma-in-supply-chain-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of Corporate Social Responsibility",
+          "link": "short-courses/essentials-of-corporate-social-responsibility",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Mastering Health and Safety Management",
+          "link": "short-courses/mastering-health-and-safety-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "1 week Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Diploma in Business Administration",
+          "link": "short-courses/diploma-in-business-administration",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Diploma in International Human Resource Management",
+          "link": "short-courses/diploma-in-international-human-resource-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Procurement & Contract Management",
+          "link": "short-courses/executive-diploma-in-procurement-contract-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        }
+      ]
+    },
+    {
+      "section_id": "short_newlyreleased",
+      "section_name": "NewlyReleased",
+      "courses": [
+        {
+          "title": "Essentials of Environmental Governance & Sustainability",
+          "link": "short-courses/essentials-of-environmental-governance-sustainability",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of Key Issues in International Environmental Law",
+          "link": "short-courses/essentials-of-key-issues-in-international-environmental-law",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of Human Rights in International Environmental Law",
+          "link": "short-courses/essentials-of-human-rights-in-international-environmental-law",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of International Environmental Law: Issues & Developments",
+          "link": "short-courses/essentials-of-international-environmental-law-issues-developments",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of International Environmental Law",
+          "link": "short-courses/essentials-of-international-environmental-law",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Basics of Climate Change & International Law",
+          "link": "short-courses/basics-of-climate-change-international-law",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Mastering International Environmental Law",
+          "link": "short-courses/mastering-international-environmental-law",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "1 week Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Mastering International Environmental Governance",
+          "link": "short-courses/mastering-international-environmental-governance",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "1 week Learning",
+          "badge": "Free Learning"
+        }
+      ]
+    },
+    {
+      "section_id": "short_IT",
+      "section_name": "Be futureReady",
+      "courses": [
+        {
+          "title": "Executive Diploma in Data Analytics",
+          "link": "short-courses/executive-diploma-in-data-analytics",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Essentials of Data Visualization using MS Excel",
+          "link": "short-courses/essentials-of-data-visualization-using-ms-excel",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Essentials of MS Excel - Formulas and Functions",
+          "link": "short-courses/essentials-of-ms-excel-formulas-and-functions",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "6-9 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Microsoft Power BI",
+          "link": "short-courses/basics-of-microsoft-power-bi",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Machine Learning Algorithms",
+          "link": "short-courses/basics-of-machine-learning-algorithms",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Master ChatGPT",
+          "link": "short-courses/master-chatgpt",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1 week Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Data Science",
+          "link": "short-courses/basics-of-data-science",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Diploma in Power BI",
+          "link": "short-courses/diploma-in-power-bi",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Diploma in SQL: Beginner to Advanced Levels",
+          "link": "short-courses/diploma-in-sql-beginner-to-advanced-levels",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "1-2 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Machine Learning",
+          "link": "short-courses/mba-essentials-with-machine-learning",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        }
+      ]
+    },
+    {
+      "section_id": "short_basics",
+      "section_name": "Popular Basics Courses -Learn in 5 Hours",
+      "courses": [
+        {
+          "title": "Basics of Python",
+          "link": "short-courses/basics-of-python",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Microsoft Power BI",
+          "link": "short-courses/basics-of-microsoft-power-bi",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Digital Marketing",
+          "link": "short-courses/basics-of-digital-marketing",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Machine Learning Algorithms",
+          "link": "short-courses/basics-of-machine-learning-algorithms",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics in Human Resource Management",
+          "link": "short-courses/basics-in-human-resource-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Data Science",
+          "link": "short-courses/basics-of-data-science",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of Artificial Intelligence",
+          "link": "short-courses/basics-of-artificial-intelligence",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        },
+        {
+          "title": "Basics of UI UX Strategy",
+          "link": "short-courses/basics-of-ui-ux-strategy",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/2210506770001652947173ciq.png?Expires=1652950773&Signature=Cc1Lj~IvGybDVCRx~fCym65C7eykBuEuMC8t44De6SGQ~Os9j2VM6VHCZ5p4rbAE47O43vKHuKax7NMibSsXqZgiVX1Kcaue1Oo8nDOmALcjU3lOkq31PaYxkeUUH7jo",
+          "duration": "4-6 Hours Learning",
+          "badge": "Free Certificate"
+        }
+      ]
+    },
+    {
+      "section_id": "short_executive_diploma",
+      "section_name": "Make a mark on your profile with theseExecutive  Diploma",
+      "courses": [
+        {
+          "title": "Executive Diploma in Business Communication",
+          "link": "short-courses/executive-diploma-in-business-communication",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Data Analytics",
+          "link": "short-courses/executive-diploma-in-data-analytics",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Procurement & Contract Management",
+          "link": "short-courses/executive-diploma-in-procurement-contract-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Supply Chain & Logistics in Global Context",
+          "link": "short-courses/executive-diploma-in-supply-chain-logistics-in-global-context",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Building Services Engineering Management",
+          "link": "short-courses/executive-diploma-in-building-services-engineering-management",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in UI UX Design",
+          "link": "short-courses/executive-diploma-in-uiux-design",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Engineering   Management",
+          "link": "short-courses/executive-diploma-in-engineering-management-uniathena",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "Executive Diploma in Cyber Laws",
+          "link": "short-courses/executive-diploma-in-cyber-laws",
+          "image": "/themes/custom/athena/images/UniAthena-text.png",
+          "duration": "2-3 Weeks Learning",
+          "badge": "Free Learning"
+        }
+      ]
+    },
+    {
+      "section_id": "short_essentials",
+      "section_name": "Management Essentials in5 weeks",
+      "courses": [
+        {
+          "title": "MBA Essentials with Machine Learning",
+          "link": "short-courses/mba-essentials-with-machine-learning",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Environment Health and Safety Management",
+          "link": "short-courses/mba-essentials-with-environment-health-and-safety-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Logistics & Supply Chain Management",
+          "link": "short-courses/mba-essentials-with-logistics-supply-chain-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Business Analytics",
+          "link": "short-courses/mba-essentials-with-business-analytics",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Artificial Intelligence",
+          "link": "short-courses/mba-essentials-with-artificial-intelligence",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Financial Risk Management",
+          "link": "short-courses/mba-essentials-with-financial-risk-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Healthcare Management",
+          "link": "short-courses/mba-essentials-with-healthcare-management",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        },
+        {
+          "title": "MBA Essentials with Data Visualization",
+          "link": "short-courses/mba-essentials-with-data-visualization",
+          "image": "https://docs.uniathena.com/configuration/univ_color_logo/3540001669291187ftg.png?Expires=1669294788&Signature=OAMEhnr26xM3NSDP0NUznxPPIe1sEAX7GN9VXtuuzeo26eybaS-EsujOS-G2KC7TUUfQV9yslL2U3uzsjY8hP4y30rmerCFrwfd1J6gYS6cfPWu19TaDDI4zVT8u~i1epTvKDd",
+          "duration": "4-5 Weeks Learning",
+          "badge": "Free Learning"
+        }
+      ]
+    },
+    {
+      "section_id": "section_6",
+      "section_name": "Pick what you want tolearn",
+      "courses": []
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are short courses?",
+      "answer": "If you don't want to spend years acquiring full degrees, short courses are the ideal approach to enhance your profession. The following are some of the advantages of taking short courses : Start learning right away – We don't always have a clear picture of what we want to do or how we want to do it. Short courses might help you get started with your studies.Improve Your CV - Short courses are a great way to boost your resume. Your new skills from your short courses would be highlighted.Boost Your Career - They provide a competitive advantage in the job market. Learning a new skill is an excellent method to advance your career.To know more, please click on the video link : UniAthena Shortcourses"
+    },
+    {
+      "question": "What is meant by Online Self- Paced Learning ?",
+      "answer": "Self-Paced learning is purely a digital learning option. The mode of learning is always online. However, learners do not need to set schedules, unlike online courses. As its name implies, Online Self Paced allows learners to learn the desired subject at their own pace. With 24*7 accessibility and information at their fingertips, learners are not restricted to any set schedule. With self-paced learning, you can take short breaks whenever you want, making it easy to retain information. Be it your home couch, at your desk or on the go, the pre-recorded Expert lectures are available whenever you want. Self-Paced learning is the gold standard when it comes to upskilling online."
+    },
+    {
+      "question": "What will I learn?",
+      "answer": "You can choose your courses from the different course categories that we are providing. The types of courses we are providing are: Basics, Essential, Mastering, Diploma, Executive Diploma and MBA Essentials."
+    },
+    {
+      "question": "How do I learn with UniAthena?&nbsp;",
+      "answer": "Learners can access the student portal any time, anywhere, and learn through the videos and essential reading materials available. Additional reading and reference materials are also provided for extra learning.Please visit the video link attached below for further information.How I learn with UniAthena"
+    },
+    {
+      "question": "What happens if we fail the quiz? Do we have an option to retake the Quiz?",
+      "answer": "Yes, you can retake the quiz."
+    },
+    {
+      "question": "When can I claim the certificate?",
+      "answer": "The certificate can be claimed once you have completed the course by attending all the quizzes and scoring the pass marks."
+    },
+    {
+      "question": "Are the certificates verified?",
+      "answer": "Yes, the certificates are blockchain verified. Anyone (you, employer etc.) can verify the certificate using the QR code."
+    },
+    {
+      "question": "Is there any validity period after course completion to claim the certificate?",
+      "answer": "No, there is no validity period for claiming the certificate. Any number of certificates can be claimed anytime."
+    },
+    {
+      "question": "How do I claim the certificate?",
+      "answer": "Once the course is completed, there will be a link available in the students portal for downloading the certificate. The certificate can be downloaded as softcopy and if the student requires a hardcopy, they will have to pay for the courier charges.To know more, please click on the video link attached belowClaim your certificates for short courses"
+    },
+    {
+      "question": "Are these courses really free?",
+      "answer": "Yes, the short courses from UniAthena are absolutely free of cost. We only charge for certificates."
+    },
+    {
+      "question": "Are these courses accredited?",
+      "answer": "These are professional certification courses and do not carry any credits."
+    },
+    {
+      "question": "How do I enrol in the course?",
+      "answer": "First login with your id and then choose the course you want. Start the course by clicking the “Start Now” option below the course card."
+    },
+    {
+      "question": "How does the assessment for the courses work?",
+      "answer": "The assessment is carried out through formal quizzes configured throughout the course at chapter levels. The students have to secure a minimum of 50% score to pass."
+    },
+    {
+      "question": "Can I enrol in more than 1 program simultaneously?",
+      "answer": "Yes, you can enrol in more than 1 program simultaneously."
+    },
+    {
+      "question": "How is my progress tracked during the course?",
+      "answer": "Your progress will be tracked through the quizzes configured in the courses."
+    },
+    {
+      "question": "How long do I have access to the course resources?",
+      "answer": "You always have lifetime access to the course resources."
+    },
+    {
+      "question": "How does Course Registration work?",
+      "answer": "Create your account by Signing into a short course. Give your First name, Last name, Email id and password for signing up. Enrol in your course and start learning."
+    },
+    {
+      "question": "What are the different levels of the courses?",
+      "answer": "The courses are basically divided into 7 LevelsFor more details- click here"
+    },
+    {
+      "question": "How much do you charge for certificates?",
+      "answer": "Charges applied vary for different courses. Here are the certificate charges: Basics - 50 USD, Essentials - 75 USD, Mastering - 100 USD, Diploma - 150 USD, Executive diploma - 200 USD, MBA essential - 250 USD."
+    },
+    {
+      "question": "What if I forgot &nbsp;my password?",
+      "answer": "Kindly follow steps to reset your password 1. Go to the registration page. 2. Click on Forgot Password option 3. In the window appears give your Registered Email ID 4. Password reset link will be sent to your mail."
+    },
+    {
+      "question": "What are Basic Courses?",
+      "answer": "These courses impart learners with basic general knowledge on the subject so that they can carry out simple tasks. Learners get an overall idea of the subject but they are expected to work and learn under direct supervision in a structured environment."
+    },
+    {
+      "question": "What are Essentials courses?",
+      "answer": "Essential courses lay stress on the conceptual framework of the course. It helps learners to think beyond the fundamentals of a subject and covers the analytical models, approaches, applications and core terminologies associated with the subject."
+    },
+    {
+      "question": "What are Mastering &nbsp;courses?",
+      "answer": "Mastering a course equips learners with a practical guide in understanding the critical aspects of a particular subject. It trains learners to develop a skillful approach in identifying and evaluating business metrics that affects the functioning of a business."
+    },
+    {
+      "question": "What are Executive Diploma courses?",
+      "answer": "Executive diplomas are structured to help business professionals, it offers a combination of fundamentals, strategies and applied business models of the subject. It encourages learners to transform significant insights into a problem solving approach for the business enterprise."
+    }
+  ]
+}

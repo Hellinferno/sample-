@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Clock, Award, BookOpen, Layers, PlayCircle, Grid } from 'lucide-react';
+import { Search, Clock, Award, BookOpen, Layers, PlayCircle, Grid, ArrowRight } from 'lucide-react';
 import coursesData from '../coursesData.json';
 
 export default function CourseExplorer({ onCourseEnrol }) {
